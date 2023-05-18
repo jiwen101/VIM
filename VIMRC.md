@@ -57,12 +57,15 @@
                      color defult //回到默认配色
 #### 5.vim配件使用
 ##### 1. 在gitup中 搜索 vim-plug 这是一个配件管理器
-         复制下面的命令在Linux终端中输入（要下载curl，sudo apt-get install curl 或者在root下安装 apt-get install curl）
-         curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-##### 2. 然后在vimrc以以下模式配置：
+         复制下面的命令在Linux终端中输入
+         （要下载curl，sudo apt-get install curl 或者在root下安装 apt-get install curl ）
+         （还要下载git sudo apt-get install git）
+        'curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'        
+##### 2. 然后在vimrc以以下模式配置
           call plug#begin('~/.vim/plugged')    
             Plug 'junegunn/vim-easy-align'
+            Plug 'connorholyday/vim-snazzy'
           call plug#end()
        
        
